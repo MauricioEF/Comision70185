@@ -1,0 +1,17 @@
+{
+  "name": "clase4paqueteria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1667.0",
+    "luxon": "^3.5.0",
+    "moment": "^2.29.0"
+  }
+}
