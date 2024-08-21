@@ -30,7 +30,7 @@ viewsRouter.get('/',(req,res)=>{
 
 viewsRouter.get('/product',(req,res)=>{
     const product = {
-        title:"producto feliz",
+        title:"producto triste :(",
         price:3000,
         code:"AZXC8A",
         offer:true
