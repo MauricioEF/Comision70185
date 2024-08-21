@@ -1,0 +1,17 @@
+<div>
+    {{#if username}}
+     <h1>Bienvenido {{username}}</h1>
+    {{else}}
+    <h1>Bienvenido, usuario :)</h1>
+    {{/if}}
+</div>
+
+<ul>
+    {{#each users}}
+    <li>
+        <p>{{this.firstName}}</p>
+    </li>
+{{/each}}
+</ul>
+
+<script src="/js/hello.js"></script>
