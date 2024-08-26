@@ -24,7 +24,21 @@ app.use('/',viewsRouter);
 
 const socketServer = new Server(server);
 
+
+
 socketServer.on('connection',(socketClient)=>{
     //¿Qué cosas ocurrirán con este socket? ¿Qué cosas le configuro?
     console.log(`Conectado un nuevo socket con id: ${socketClient.id}`)
+
+    socketClient.on('saludito',data => {
+        //Yo decido qué hacer con esa data.
+        console.log(data);
+        socketClient.emit('respuesta','Holitas desde el server')
+    })
+
+    socketClient.on('message',data=>{
+        //Guarda la data en la base de datos
+
+        socketServer.emit('log',data)
+    })
 })
